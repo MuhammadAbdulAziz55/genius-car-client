@@ -52,7 +52,7 @@ const CheckOut = () => {
       <h2 className="text-4xl">Your are about to order: {title}</h2>
       <h4 className="text-3xl mb-4"> Price: ${price}</h4>
       <div className="w-full bg-gray-300">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pl-20 pr-20 pt-20 pb-5 align-middle ">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:pl-20 pl-10 lg:pr-20 pr-10 lg:pt-20 pt-10 pb-5 align-middle ">
           <input
             name="firstName"
             type="text"
