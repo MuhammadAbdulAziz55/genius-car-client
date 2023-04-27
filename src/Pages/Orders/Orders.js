@@ -45,16 +45,11 @@ const Orders = () => {
         .then((res) => res.json())
         .then((data) => {
           console.log(data);
-          if (data.handleDelete > 0) {
+          if (data.deletedCount > 0) {
             alert("Your order has been deleted successfully");
             const remaining = orders.filter((ord) => ord._id !== id);
-
-            return setOrders(remaining);
-
-            // console.log(remaining);
-          }
-          if (loading) {
-            return <h1 className="text-4xl">Loading....</h1>;
+            console.log(remaining);
+            setOrders(remaining);
           }
         });
     }

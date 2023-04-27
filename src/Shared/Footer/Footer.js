@@ -2,21 +2,21 @@ import React from "react";
 import logo from "../../assets/logo.svg";
 const Footer = () => {
   return (
-    <footer className="footer py-20 pl-4 bg-black text-white">
-      <div>
+    <footer className="footer py-20 pl-4 bg-black text-white ">
+      <div className="lg:flex lg:flex-col flex flex-col  lg:items-start items-center lg:justify-start justify-center">
         <img alt="" src={logo} />
-        <p>
+        <p className="lg:text-left text-center">
           ACME Industries Ltd.
           <br />
           Providing reliable tech since 1992
         </p>
       </div>
-      <div>
-        <span className="footer-title">Services</span>
-        <a href="/" className="link link-hover">
+      <div className="lg:flex lg:flex-col flex flex-col  lg:items-start items-center lg:justify-start justify-center">
+        <span className="footer-title lg:text-left text-center">Services</span>
+        <a href="/" className="link link-hover lg:text-left text-center ">
           Branding
         </a>
-        <a href="/" className="link link-hover">
+        <a href="/" className="link link-hover lg:text-left text-center">
           Design
         </a>
         <a href="/" className="link link-hover">
