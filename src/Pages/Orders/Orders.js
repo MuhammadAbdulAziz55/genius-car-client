@@ -11,7 +11,7 @@ const Orders = () => {
 
   useEffect(() => {
     fetch(
-      `https://genius-car-server-ss73.vercel.app/orders?email=${user?.email}`,
+      `https://genius-car-server-eta-three.vercel.app/orders?email=${user?.email}`,
       {
         headers: {
           authorization: `Bearer ${localStorage.getItem("geniusToken")}`,
@@ -36,7 +36,7 @@ const Orders = () => {
     );
 
     if (proceed) {
-      fetch(`https://genius-car-server-ss73.vercel.app/orders/${id}`, {
+      fetch(`https://genius-car-server-eta-three.vercel.app/orders/${id}`, {
         method: "DELETE",
         headers: {
           authorization: `Bearer ${localStorage.getItem("geniusToken")}`,
@@ -88,7 +88,7 @@ const Orders = () => {
   // };
 
   const handleStatusUpdate = (id) => {
-    fetch(`https://genius-car-server-ss73.vercel.app/orders/${id}`, {
+    fetch(`https://genius-car-server-eta-three.vercel.app/orders/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

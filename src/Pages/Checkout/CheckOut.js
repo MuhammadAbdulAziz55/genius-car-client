@@ -29,7 +29,7 @@ const CheckOut = () => {
     // }
     // else{
 
-    fetch("https://genius-car-server-ss73.vercel.app/orders", {
+    fetch("https://genius-car-server-eta-three.vercel.app/orders", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

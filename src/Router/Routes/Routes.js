@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://genius-car-server-ss73.vercel.app/services/${params.id}`
+            `https://genius-car-server-eta-three.vercel.app/services/${params.id}`
           ),
       },
       {
