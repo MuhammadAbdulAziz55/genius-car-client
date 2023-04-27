@@ -11,13 +11,15 @@ const ServiceCard = ({ service }) => {
         </figure>
       </div>
       <div className="flex flex-col pl-5 pr-4">
-        <h2 className="card-title">{title}</h2>
+        <h2 className="lg:card-title lg:text[22px] text-base font-semibold">
+          {title}
+        </h2>
         <div className="flex justify-between pb-5">
-          <p className="text-orange-600 font-semibold text-base">
+          <p className="lg:text-orange-600 text-orange-600 lg:font-semibold font-semibold lg:text-lg text-sm ">
             Price: ${price}
           </p>
           <Link to={`/checkout/${_id}`}>
-            <BsFillArrowRightCircleFill className=" text-orange-600 w-6 h-6 cursor-pointer " />
+            <BsFillArrowRightCircleFill className=" lg:text-orange-600 text-orange-600 lg:w-6 lg:h-6 w-5 h-5 lg:cursor-pointer cursor-pointer" />
           </Link>
         </div>
       </div>

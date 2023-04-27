@@ -13,8 +13,10 @@ const Services = () => {
     <div className=" mb-20">
       <div className="text-center">
         <p className="text-orange-600 text-2xl mb-3">Service</p>
-        <h2 className="text-4xl font-bold mb-5">Our Service Area</h2>
-        <p className="mb-10">
+        <h2 className="lg:text-4xl text-[18px] font-bold mb-5">
+          Our Service Area
+        </h2>
+        <p className="mb-10 lg:text-[16px] text-[12px]">
           the majority have suffered alteration in some form, by injected
           humour, <br />
           or randomised words which don't look even slightly believable.{" "}
