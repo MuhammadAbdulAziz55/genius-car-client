@@ -32,7 +32,7 @@ const About = () => {
             humour, or randomised words which don't look even slightly
             believable.
           </p>
-          <div className="lg:flex flex items-center justify-center">
+          <div className="lg:flex flex lg:items-start items-center lg:justify-start justify-center">
             <button className="lg:btn lg:btn-primary btn-primary lg:bg-orange-500 bg-orange-500 lg:hover:bg-orange-600 hover:bg-orange-600 lg:border-none border-none  inline-flex items-center justify-center text-center text-white h-5 p-3 text-sm">
               Get More Info
             </button>
