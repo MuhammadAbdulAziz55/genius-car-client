@@ -1,7 +1,8 @@
 import React from "react";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 const ServiceCard = ({ service }) => {
-  const { title, img, price, description } = service;
+  const { title, img, price, _id } = service;
   return (
     <div className="card  w-[100%] bg-white border-[2px] border-gray-200 rounded-sm">
       <div className="px-5 pt-6 pb-5">
@@ -15,7 +16,9 @@ const ServiceCard = ({ service }) => {
           <p className="text-orange-600 font-semibold text-base">
             Price: ${price}
           </p>
-          <BsFillArrowRightCircleFill className=" text-orange-600 w-6 h-6 cursor-pointer " />
+          <Link to={`/checkout/${_id}`}>
+            <BsFillArrowRightCircleFill className=" text-orange-600 w-6 h-6 cursor-pointer " />
+          </Link>
         </div>
       </div>
     </div>
